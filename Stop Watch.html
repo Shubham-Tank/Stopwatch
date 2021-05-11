@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="script.js" defer></script>
+    <style>
+        .container{
+            margin-top: 15%;
+        }
+        
+        .clock{
+            position: relative;
+            border: 5px solid darkblue;
+            border-radius: 30px;
+            margin: auto;
+            width: 20%;
+            text-align: center;
+            background-color: darkslategrey;
+            color: wheat;
+            
+        }
+        .btn-con{
+            margin: auto;
+            width: 20%;
+        }
+        .btn{
+            margin: 14px;
+            width: 70px;
+            height: 40px;
+            font-size: larger;
+            border-radius :20px;
+            margin-top: 30px;
+        }
+
+        .start{
+            color: white;
+            background-color: green;
+        }
+        .start:hover{
+            box-shadow: 0 0 5px lightgreen;
+        }
+
+        .stop{
+            color: darkslategrey;
+            background-color: yellow;
+        }
+        .stop:hover{
+            box-shadow: 0 0 5px lightyellow;
+        }
+
+        .reset{
+            color: white;
+            background-color: red;
+        }
+        .reset:hover{
+            box-shadow: 0 0 5px orange;
+        }
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <h1>
+                <span class="min">00</span> :
+                <span class="sec">00</span> :
+                <span class="ms">00</span>
+            </h1>
+        </div>
+        <div class="btn-con">
+            <span>
+                <button class="btn start">Start</button>
+            </span>
+            <span>
+                <button class="btn stop">Stop</button>
+            </span>
+            <span>
+                <button class="btn reset">Reset</button>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
